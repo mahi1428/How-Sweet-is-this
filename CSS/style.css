@@ -1,0 +1,386 @@
+
+ /* Define custom fonts */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url(../font/RobotoSlab-VariableFont_wght.ttf);
+} 
+@font-face {
+    font-family:BebasNeue ;
+    src: url(../font/BebasNeue-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+     font-family: 'RobotoSlab', sans-serif; 
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(to right, #6f3921, #522b1a);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: #f4f4f4;
+    margin-right: 20px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+}
+
+
+.logo img {
+    height: 90px;
+    width: auto;
+}
+
+/* Top container styling */
+#top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #522b1a, #8a5f3c);
+    height: 500px;
+}
+
+#top-container video {
+    max-width: 90%;
+    height: 30vh;
+    float: right;
+}
+
+#top-container p {
+    max-width: 45%;
+    margin-left: 50px;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 300;
+    color: white;
+    font-family: BebasNeue;
+}
+
+/* Products section */
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 5%;
+}
+
+.products h2 {
+    color: #31026c;
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.products h3 {
+    color:#522b1a;
+    font-family: 'Nesting', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.chocolate-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chocolate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chocolate>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 20px;
+    height: 550px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.chocolate-image img {
+    height: 200px;
+    width: auto;
+    padding: 10px;
+}
+/* Button styling */
+button {
+    background-color: #210082;
+    color: white;
+    padding: 15px 35px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 180px;
+    height: 50px;
+    margin-top: 2rem;
+}
+
+button:hover {
+    background-color:white;
+    color: #210082;
+}
+#bottom-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+
+/* .left-content {
+    flex: 1;
+    width: 50%;
+}
+
+.right-content img {
+   width: 50%;
+   
+} */
+/* About section styling */
+#about {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
+
+
+.about-item {
+    vertical-align: middle;
+    padding: 3vw;
+    padding-left: 5vw;
+}
+
+.description {
+  padding:5vw 10vw;
+}
+
+.description h1 {
+    font-size: 2em;
+    padding: 1.5em 0 0 1em;
+}
+
+.description p {
+    padding: 2em;
+    line-height: 1.5em;
+}
+
+.bigcup {
+    padding-bottom: 1vw;
+    text-align: center;
+
+}
+#about h1 {
+    font-size: 2em;
+    color: #6f3921;
+    margin-bottom: 10px;
+   
+}
+#about h3 ,h4{
+font-size: 1.5em;
+}
+/* Contact section styling */
+#contact {
+    background-image: linear-gradient(to right, #E6AE49, #DD6F68);
+    background-color: #E6AE49;
+    padding: 3vw 0;
+}
+
+#contact h1 {
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+#contact p {
+    text-align: center;
+    margin: 0 auto 2em auto;
+    color: white;
+    font-family: 'RobotoSlab', sans-serif;
+    font-weight: 300;
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+    margin: 0 7vw;
+}
+
+
+
+input[type=text],
+[type=email],
+select,
+textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+.form-container {
+    width: 70%;
+    margin: 0 auto; 
+    border-radius: 5px;
+    background-color: #FDF8F3;
+    padding: 40px;
+    box-shadow: 0.5em 0.5em 0.5em grey;
+}
+
+input[type=submit] {
+    background-color: #3C131B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#contact form {
+    font-family: 'RobotoSlab', sans-serif;
+}
+.submit-button {
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: #60212d;
+}
+
+
+.form-container {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #FDF8F3;
+    padding: 40px;
+    box-shadow: 0.5em 0.5em 0.5em grey;
+}
+footer {
+    background-color: #3C131B;
+    padding: 20px;
+    color: #FDF8F3;
+   
+}
+
+#company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-info,
+.additional-links {
+    width: 45%;
+}
+
+.company-logo img {
+    width: 480px;
+    height: auto;
+    
+}
+
+.company-info h2,
+.additional-links h2 {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.additional-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.additional-links ul li {
+    margin-bottom: 5px;
+}
+
+.additional-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.additional-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.additional-links h2 {
+    color: #ccc;
+     margin-bottom: 10px;
+}
+
+.copyright p {
+    line-height: 1;
+    font-size: smaller;
+}
+.additional-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.additional-links ul li {
+    margin-bottom: 10px;
+    width: calc(33.33% - 10px);
+   
+
+.additional-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+}
+
+.additional-links ul li a:hover {
+    text-decoration: underline;
+}
+ 
+
+}
